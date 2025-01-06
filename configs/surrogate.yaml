@@ -1,0 +1,34 @@
+vae_params:
+  name: 'SurrogateVAE'
+  in_dim: 80
+  latent_dim_coefficient: 1
+  encoder_dims: [ 128, 128 ]
+  decoder_dims: [ 128, 128 ]
+  hidden_dims: [ 128, 128 ]
+  ins_emb_dim_coefficient: 1
+  scorer_generator_mid_dim: 64
+
+loss_params:
+  lamBDa: 1
+  gamma: 0.0005
+
+
+data_params:
+  data_path: "Data/"
+  train_batch_size: 8192
+  val_batch_size: 8192
+  num_workers: 0
+
+exp_params:
+  LR: 0.0005
+  weight_decay: 0.00001
+  manual_seed: 1088
+
+trainer_params:
+  gpus: [ 1 ]
+  max_epochs: 5000
+
+logging_params:
+  save_dir: "../../logs/surrogate_logs"
+  manual_seed: 2333
+  name: 'SurrogateVAE'

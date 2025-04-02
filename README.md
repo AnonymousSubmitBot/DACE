@@ -1,5 +1,5 @@
 # DACE
-The Source code for paper *Domain-Agnostic Co-Evolution of Generalizable Parallel Algorithm Portfolios*
+The Source code for paper *Evolving Generalizable Parallel Algorithm Portfolios via Domain-Agnostic Instance Generation*
 
 This page will tell you how to config the environment for the source code and run it.
 
